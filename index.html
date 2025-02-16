@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5bbea764ff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/dp.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Activities</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Pre-Final Year Student</p>
+                <h1>Hi, I'm <span>Dharshini</span><br> from Chennai</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!----- About Section ----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/prof.png" class="b">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+                    <p class="text">Hi! I'm Dharshini, a Computer Science and Engineering student at Sri Ramakrishna Institute of Technology. I'm passionate about software development and constantly exploring new technologies to enhance my skills. When I'm not coding, I love content creation, drawing, and I love to travel.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li class="icon"><i class="fa-solid fa-terminal"></i><span>C/C++</span></li>
+                            <li class="icon"><i class="fa-brands fa-java"></i><span>Java</span></li>
+                            <li class="icon"><i class="fa-brands fa-html5"></i><span>HTML</span></li>
+                            <li class="icon"><i class="fa-brands fa-css"></i><span>CSS</span></li>
+                            <li class="icon"><i class="fa-brands fa-js"></i><Span>Javascript</Span></li>
+
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><i  class="fa-solid fa-laptop"></i><span>Internship</span><br><br>Attended a 15 days workshop at Mobile Tutor Private Limited as a Game Development Intern.<br> Gained hands-on experience on building 2D and 3D games and implemented game mechanics</li>
+                            <li><i class="fa-solid fa-handshake-angle"></i><span>National Service Scheme(NSS) Special Camp</span><br>Volunteered in a 8 days camp,Creating a positive impact among the local community through social awareness events for the residents and school children,tree plantation and cleaning,</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><i class="fa-solid fa-book"></i><span>2019-2020</span><br>Secondary Education at Alok Public School, Silvassa</li>
+                            <li><i class="fa-solid fa-book"></i><span>2021-2022</span><br>Senior Secondary Education at Velammal Vidyalaya Annexure, Chennai</li>
+                            <li><i class="fa-solid fa-book"></i><span>2022-2026</span><br>B.E. Computer Science and Engineering at Sri Ramakrishna Institute of Technology, Coimbatore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Activities</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Executive Member of AI Club</h2>
+                    <p>Collaborated with peers to organize AI-focussed events and hosted the inauguration ceremony as the MC.</p>
+                         
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h2>5 Days AR/VR Development Workshop</h2>
+                    <p>Gained Hands on experience on developing AR/VR technologies using tools such as Blender and Unity.</p>
+                   
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Member of Competitive Programming Club</h2>
+                    <p>An active member in the club and participated in technical workshops and coding events to enhance my skills in programming language.</p>
+                   
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/sih1.png">
+                    <div class="layer">
+                        <h3>Navigation for Railway Station Facilities and Locations.</h3>
+                        <p>My submission for Smart India Hackathon</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/insomnix1.png">
+                    <div class="layer">
+                        <h3>Insomnix</h3>
+                        <p>Designed an app to help people with chronic insomnia and used scientific solutions for the cure</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/pf1.png">
+                    <div class="layer">
+                        <h3>My Portfolio Website</h3>
+                        <p>My first ever website created using HTML,CSS and Javascript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------contact-->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>dharshiniprem07@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>87807xxxxx</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dharshini-prem-b64b5b1ba/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/dharshinixoxo/"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+      <a href="/images/P.DHARSHINI-FlowCV-Resume-20250205.pdf"download class="btn btn2">Download CV</a>
+    </div>
+        <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="your message"></textarea>
+            <button type="Submit"class="btn btn2">Submit</button>
+</form>
+<span id="msg"></span>
+</div>
+</div>
+</div>
+<div class="copyright">
+    <p>Copyright © Dharshini <i class="fa-solid fa-heart"></i></p>
+</div>
+</div>
+    <script>
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+                tabcontent.style.display = "none";
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            document.getElementById(tabname).style.display = "block";
+        }
+
+        window.onload = function() {
+            document.getElementById("skills").style.display = "block";
+            document.getElementById("experience").style.display = "none";
+            document.getElementById("education").style.display = "none";
+        };
+    </script>
+    <script>
+        var sidemenu =document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwgQjFgsJfI4uWRcKtGrQxPzHOSsUQ2e7P29I_JXIujmUVuNVDlH98TW3f9BGi6uEQ3mg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
