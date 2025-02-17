@@ -11,7 +11,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/dp.png" class="logo">
+                <img src="/images/dp.png" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -34,15 +34,15 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/prof.png" class="b">
+                    <img src="/images/prof.png" class="b">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About Me</h1>
                     <p class="text">Hi! I'm Dharshini, a Computer Science and Engineering student at Sri Ramakrishna Institute of Technology. I'm passionate about software development and constantly exploring new technologies to enhance my skills. When I'm not coding, I love content creation, drawing, and I love to travel.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
                     </div>
                     
                     <div class="tab-contents active-tab" id="skills">
@@ -60,7 +60,7 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><i  class="fa-solid fa-laptop"></i><span>Internship</span><br><br>Attended a 15 days workshop at Mobile Tutor Private Limited as a Game Development Intern.<br> Gained hands-on experience on building 2D and 3D games and implemented game mechanics</li>
-                            <li><i class="fa-solid fa-handshake-angle"></i><span>National Service Scheme(NSS) Special Camp</span><br>Volunteered in a 8 days camp,Creating a positive impact among the local community through social awareness events for the residents and school children,tree plantation and cleaning,</li>
+                            <li><i class="fa-solid fa-handshake-angle"></i><span>National Service Scheme(NSS) Special Camp</span><br>Volunteered in an 8-day camp, creating a positive impact through social awareness events, tree plantation, and community cleaning.</li>
                             
                         </ul>
                     </div>
@@ -111,21 +111,21 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/sih1.png">
+                    <img src="/images/sih1.png">
                     <div class="layer">
                         <h3>Navigation for Railway Station Facilities and Locations.</h3>
                         <p>My submission for Smart India Hackathon</p>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/insomnix1.png">
+                    <img src="/images/insomnix1.png">
                     <div class="layer">
                         <h3>Insomnix</h3>
                         <p>Designed an app to help people with chronic insomnia and used scientific solutions for the cure</p>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/pf1.png">
+                    <img src="/images/pf1.png">
                     <div class="layer">
                         <h3>My Portfolio Website</h3>
                         <p>My first ever website created using HTML,CSS and Javascript</p>
@@ -146,7 +146,7 @@
             <a href="https://www.linkedin.com/in/dharshini-prem-b64b5b1ba/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/dharshinixoxo/"><i class="fa-brands fa-square-instagram"></i></a>
       </div>
-      <a href="images/P.DHARSHINI-FlowCV-Resume-20250205.pdf"download class="btn btn2">Download CV</a>
+      <a href="/images/P.DHARSHINI-FlowCV-Resume-20250205.pdf"download class="btn btn2">Download CV</a>
     </div>
         <div class="contact-right">
         <form name="submit-to-google-sheet">
@@ -164,7 +164,7 @@
 </div>
 </div>
     <script>
-        function opentab(tabname) {
+        function opentab(event, tabname) {
             var tablinks = document.getElementsByClassName("tab-links");
             var tabcontents = document.getElementsByClassName("tab-contents");
             
@@ -206,8 +206,8 @@
             .then(response => {
                 msg.innerHTML="Message sent successfully!"
                 setTimeout(function(){
-                    msg.innerHTML=""
-                },5000)
+                    msg.innerHTML="";
+                },5000);
                 form.reset()
             })
             .catch(error => console.error('Error!', error.message))
